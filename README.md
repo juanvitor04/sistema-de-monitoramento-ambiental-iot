@@ -42,4 +42,4 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 - Docker instalado na máquina (para InfluxDB e Grafana)
 - Sensores conectados aos pinos indicados nos códigos
 
-### Processo de instalação no arquivo requisitos.txt  &uarr;
+### Processo de instalação no arquivo requisitos.txt
