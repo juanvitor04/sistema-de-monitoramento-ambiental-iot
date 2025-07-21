@@ -42,7 +42,3 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 - Docker instalado na máquina (para InfluxDB e Grafana)
 - Sensores conectados aos pinos indicados nos códigos
 
-### Passo 1: Subir os serviços InfluxDB e Grafana
-
-```bash
-docker-compose up -d
