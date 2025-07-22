@@ -85,6 +85,7 @@ docker compose up -d
 ```
 
 ## 🛠️ Configuração do Sistema
+
 As configurações devem ser feitas no arquivo lora_receiver.ino (para comunicação via LoRa).
 
 Caso opte por Wi-Fi, utilize o arquivo detection_wifi.ino.
@@ -102,30 +103,25 @@ Ele é responsável por:
 
 Você deve alterar as variáveis de ambiente no seu código para refletirem os dados reais da sua instância do InfluxDB. Essas informações são geradas quando você faz a configuração inicial do banco.
 
-🌐 0. Wi-Fi (Obrigatório para envio ao InfluxDB)
-
+## Configuração do Wi-Fi (Obrigatório para envio ao InfluxDB)
+🔁 Substitua pelos dados reais da sua rede Wi-Fi.
+```C++
 #define WIFI_SSID "SSID_WIFI"
-
 #define WIFI_PASSWORD "PASSWORD_WIFI"
-
-🔁 Substitua pelos dados reais da sua rede Wi-Fi:
-
-#define WIFI\_SSID "MinhaRedeWiFi"
-
-#define WIFI\_PASSWORD "minhaSenha123"
-
+```
+```Èxemplo
+#define WIFI_SSID "MinhaRedeWiFi"
+#define WIFI_PASSWORD "minhaSenha123"
+```
+Configuração do influxDB
 ⚠️ O ESP32 precisa estar conectado na mesma rede local do computador ou servidor que está rodando o InfluxDB.
-
-📍1. URL do InfluxDB
-
-#define INFLUXDB\_URL "http://127.0.0.1:8086"
-
 🔁 Substitua 127.0.0.1 pelo IP real da máquina onde o InfluxDB está rodando.
-
-Exemplo:
-
+```C++
+#define INFLUXDB\_URL "http://127.0.0.1:8086"
+```
+```Exemplo
 #define INFLUXDB\_URL "http://192.168.1.100:8086"
-
+```
 🔐 2. Token de Acesso
 
 #define INFLUXDB\_TOKEN "SEU\_TOKEN"
