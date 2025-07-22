@@ -63,15 +63,15 @@ As variáveis de ambiente podem ser mudadas no arquivo docker-compose.yml lembre
 Para realizar a conexão com o banco de dados.
 ```ỳml
 
-INFLUXDB_USER=admin
+INFLUXDB_USER=INFLUXDB_USER
 
-INFLUXDB_PASSWORD=senha123
+INFLUXDB_PASSWORD=INFLUXDB_PASSWORD
 
-INFLUXDB_ORG=my-org
+INFLUXDB_ORG=INFLUXDB_ORG
 
-INFLUXDB_BUCKET=my-bucket
+INFLUXDB_BUCKET=INFLUXDB_BUCKET
 
-INFLUXDB_TOKEN=meu-token-secreto
+INFLUXDB_TOKEN=INFLUXDB_TOKEN
 ```
 ## Grafana usuário e senha
 No arquivo docker-compose.yml edite as variveis de ambiente do grafana
@@ -109,7 +109,7 @@ Você deve alterar as variáveis de ambiente no seu código para refletirem os d
 #define WIFI_PASSWORD "PASSWORD_WIFI"
 ```
 Exemplo
-```Exemplo
+```C++
 #define WIFI_SSID "MinhaRedeWiFi"
 #define WIFI_PASSWORD "minhaSenha123"
 ```
@@ -120,7 +120,7 @@ Configuração do influxDB
 #define INFLUXDB\_URL "http://127.0.0.1:8086"
 ```
 Exemplo
-```Exemplo
+```C++
 #define INFLUXDB\_URL "http://192.168.1.100:8086"
 ```
 ## 🔐 Token de Acesso
@@ -135,14 +135,14 @@ Cole no código
 ```C++
 #define INFLUXDB\_TOKEN "meu_token_gerado"
 ```
-🏢 3. Organização (Org)
-
-#define INFLUXDB\_ORG "SUA\_ORG"
-
+## 🏢 Organização (Org)
+```C++
+#define INFLUXDB\_ORG "NFLUXDB_ORG"
+```
 🔁 Substitua pelo nome da organização criada no setup inicial do InfluxDB:
-
+```C++
 #define INFLUXDB\_ORG "minha\_empresa"
-
+```
 🪣 4. Bucket
 
 #define INFLUXDB\_BUCKET "SEU\_BUCKET"
