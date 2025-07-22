@@ -108,7 +108,8 @@ Você deve alterar as variáveis de ambiente no seu código para refletirem os d
 #define WIFI_SSID "SSID_WIFI"
 #define WIFI_PASSWORD "PASSWORD_WIFI"
 ```
-```Èxemplo
+Exemplo
+```Exemplo
 #define WIFI_SSID "MinhaRedeWiFi"
 #define WIFI_PASSWORD "minhaSenha123"
 ```
@@ -118,6 +119,7 @@ Configuração do influxDB
 ```C++
 #define INFLUXDB\_URL "http://127.0.0.1:8086"
 ```
+Exemplo
 ```Exemplo
 #define INFLUXDB\_URL "http://192.168.1.100:8086"
 ```
