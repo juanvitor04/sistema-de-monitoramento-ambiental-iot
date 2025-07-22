@@ -63,27 +63,27 @@ As variáveis de ambiente podem ser mudadas no arquivo docker-composer.yml lembr
 Para realizar a conexão com o banco de dados.
 ```ỳml
 
-INFLUXDBUSER=admin
+INFLUXDB_USER=admin
 
-INFLUXDBPASSWORD=senha123
+INFLUXDB_PASSWORD=senha123
 
-INFLUXDBORG=my-org
+INFLUXDB_ORG=my-org
 
-INFLUXDBBUCKET=my-bucket
+INFLUXDB_BUCKET=my-bucket
 
-INFLUXDBTOKEN=meu-token-secreto
-
-GRAFANAUSER=admin
-
-GRAFANAPASSWORD=grafana123
+INFLUXDB_TOKEN=meu-token-secreto
 ```
-
+## Grafana usuário e senha
+```yml
+GF_SECURITY_ADMIN_USER=GRAFANA_USER
+GF_SECURITY_ADMIN_PASSWORD=GRAFANA_PASSWORD
+```
 ## Inicie os contairners
 ```bash
 docker compose up -d
 ```
 
-🛠️ Configurações Necessárias para o Sistema Funcionar(Observação essas alterações deve ser feita  no arquivo nomeado "Lora\_receiver.ino"
+🛠️ Configurações Necessárias para o Sistema Funcionar(Observação essas alterações deve ser feita  no arquivo nomeado "lora_receiver.ino"
 
 se for usar comunicação LoRA se for wifi utilize o arquivo "detection\_wifi.ino").
 
