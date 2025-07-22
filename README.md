@@ -166,10 +166,10 @@ Passos básicos para integrar:
     - Default Bucket: o bucket onde os dados estão sendo armazenados.
 2. Testar conexão
 
-Clique em Save & Test para garantir que o Grafana consiga se conectar ao InfluxDB.
+  Clique em Save & Test para garantir que o Grafana consiga se conectar ao InfluxDB.
 
 3. Criar dashboards
 
-Use a interface do Grafana para criar gráficos e painéis com as métricas do seu bucket.
+  Use a interface do Grafana para criar gráficos e painéis com as métricas do seu bucket.
 
-Utilize a linguagem de consulta Flux (linguagem padrão do InfluxDB 2.x) para montar consultas avançadas.
+  Utilize a linguagem de consulta Flux (linguagem padrão do InfluxDB 2.x) para montar consultas avançadas.
