@@ -52,3 +52,15 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 
+## 🔐 Variáveis de Ambiente – InfluxDB e Grafana
+
+### 📦 InfluxDB
+
+```env
+INFLUXDB_USER=admin
+INFLUXDB_PASSWORD=senha123
+INFLUXDB_ORG=my-org
+INFLUXDB_BUCKET=my-bucket
+INFLUXDB_TOKEN=meu-token-secreto
+
+
