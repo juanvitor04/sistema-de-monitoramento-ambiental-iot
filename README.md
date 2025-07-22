@@ -1,4 +1,4 @@
-readme_content = """# 🌡️ Estação de Monitoramento Ambiental com ESP32, LoRa e Grafana
+# 🌡️ Estação de Monitoramento Ambiental com ESP32, LoRa e Grafana
 
 Este projeto tem como objetivo criar uma **estação de monitoramento ambiental inteligente** utilizando o microcontrolador **ESP32**, sensores de qualidade do ar (**MQ-135**) e de temperatura/umidade (**DHT11**), comunicação via **LoRa** e integração com banco de dados **InfluxDB** e o painel de visualização **Grafana**.
 
