@@ -151,31 +151,23 @@ Cole no código
 ```C++
 #define INFLUXDB\_BUCKET "dados_lora"
 ```
-🔗 Integração do Grafana com o InfluxDB
+## Integração do Grafana com o InfluxDB
 
 Passos básicos para integrar:
 
 1. Configurar o InfluxDB no Grafana
-
-No painel do Grafana, vá em Configuration > Data Sources.
-
-Clique em Add data source e escolha InfluxDB.
-
-Preencha as configurações:
-
-URL: http://<IP\_do\_InfluxDB>:8086
-
-Auth: marque para usar autenticação e insira o Token do InfluxDB.
-
-Organization: nome da organização configurada no InfluxDB.
-
-Default Bucket: o bucket onde os dados estão sendo armazenados.
-
-1. Testar conexão
+  1. No painel do Grafana, vá em Configuration > Data Sources.
+  2. Clique em Add data source e escolha InfluxDB.
+  3. Preencha as configurações
+    - URL: http://<IP\_do\_InfluxDB>:8086
+    - Auth: marque para usar autenticação e insira o Token do InfluxDB.
+    - Organization: nome da organização configurada no InfluxDB.
+    - Default Bucket: o bucket onde os dados estão sendo armazenados.
+2. Testar conexão
 
 Clique em Save & Test para garantir que o Grafana consiga se conectar ao InfluxDB.
 
-1. Criar dashboards
+3. Criar dashboards
 
 Use a interface do Grafana para criar gráficos e painéis com as métricas do seu bucket.
 
