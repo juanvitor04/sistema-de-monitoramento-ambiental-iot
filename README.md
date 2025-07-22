@@ -74,7 +74,7 @@ INFLUXDB_BUCKET=INFLUXDB_BUCKET
 INFLUXDB_TOKEN=INFLUXDB_TOKEN
 ```
 ## Grafana usuário e senha
-No arquivo docker-compose.yml edite as variveis de ambiente do grafana
+Abra o arquivo docker-compose.yml e edite as variveis de ambiente do grafana
 ```yml
 GF_SECURITY_ADMIN_USER=GRAFANA_USER
 GF_SECURITY_ADMIN_PASSWORD=GRAFANA_PASSWORD
@@ -137,20 +137,20 @@ Cole no código
 ```
 ## 🏢 Organização (Org)
 ```C++
-#define INFLUXDB\_ORG "NFLUXDB_ORG"
+#define INFLUXDB\_ORG "INFLUXDB_ORG"
 ```
 🔁 Substitua pelo nome da organização criada no setup inicial do InfluxDB:
 ```C++
-#define INFLUXDB\_ORG "minha\_empresa"
+#define INFLUXDB\_ORG "minha_empresa"
 ```
-🪣 4. Bucket
-
-#define INFLUXDB\_BUCKET "SEU\_BUCKET"
-
+## 🪣 Bucket
+```C++
+#define INFLUXDB\_BUCKET "INFLUXDB_BUCKET"
+```
 🔁 Substitua pelo nome do bucket onde deseja armazenar os dados:
-
-#define INFLUXDB\_BUCKET "dados\_lora"
-
+```C++
+#define INFLUXDB\_BUCKET "dados_lora"
+```
 🔗 Integração do Grafana com o InfluxDB
 
 Passos básicos para integrar:
