@@ -50,9 +50,7 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 
 ---
 
-## 🐋 Docker Compose – Instalação e Configuração
-
-### 📦 Instalação do Docker e Docker Compose (Ubuntu)
+###  🐋  Instalação do Docker e Docker Compose (Ubuntu)
 ```bash
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
@@ -63,6 +61,7 @@ As configurações abaixo foram feitas no arquivo "docker-composer.yml" então b
 As variáveis de ambiente podem ser mudadas no arquivo docker-composer.yml lembre-se que esses dados vão ser colocados no arquivo "detection\_wifi.ino" ou no "lora\_receiver.ino"
 
 Para realizar a conexão com o banco de dados.
+```ỳml
 
 INFLUXDB\_USER=admin
 
@@ -77,10 +76,12 @@ INFLUXDB\_TOKEN=meu-token-secreto
 GRAFANA\_USER=admin
 
 GRAFANA\_PASSWORD=grafana123
+```
 
-após isso suba os contairners
-
+## Inicie os contairners
+```bash
 docker compose up -d
+```
 
 🛠️ Configurações Necessárias para o Sistema Funcionar(Observação essas alterações deve ser feita  no arquivo nomeado "Lora\_receiver.ino"
 
