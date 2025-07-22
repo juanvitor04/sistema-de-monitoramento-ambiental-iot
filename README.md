@@ -89,7 +89,7 @@ As configurações devem ser feitas no arquivo lora_receiver.ino (para comunica�
 
 Caso opte por Wi-Fi, utilize o arquivo detection_wifi.ino.
 
-⚠️ Importante:
+## ⚠️ Importante
 O dispositivo receptor (gateway) precisa ter suporte a Wi-Fi, pois ele funciona como uma ponte entre LoRa e Wi-Fi.
 
 Ele é responsável por:
@@ -123,18 +123,18 @@ Exemplo
 ```Exemplo
 #define INFLUXDB\_URL "http://192.168.1.100:8086"
 ```
-🔐 2. Token de Acesso
-
-#define INFLUXDB\_TOKEN "SEU\_TOKEN"
-
-🔁 Gere um token no InfluxDB em:
+## 🔐 Token de Acesso
+```C++
+#define INFLUXDB_TOKEN "SEU_TOKEN"
+```
+🔁 Gere um token no InfluxDB em
 
 Load Data > API Tokens > Generate Token
 
-Cole no código:
-
-#define INFLUXDB\_TOKEN "meu\_token\_gerado"
-
+Cole no código
+```C++
+#define INFLUXDB\_TOKEN "meu_token_gerado"
+```
 🏢 3. Organização (Org)
 
 #define INFLUXDB\_ORG "SUA\_ORG"
