@@ -58,7 +58,7 @@ sudo apt install -y docker.io docker-compose-plugin
 
 As configurações abaixo foram feitas no arquivo "docker-composer.yml" então baixe o arquivo que está disponivel e o edite.
 
-As variáveis de ambiente podem ser mudadas no arquivo docker-composer.yml lembre-se que esses dados vão ser colocados no arquivo "detection\_wifi.ino" ou no "lora\_receiver.ino"
+As variáveis de ambiente podem ser mudadas no arquivo docker-composer.yml lembre-se que essas informações vão ser colocados no arquivo "detection\_wifi.ino" ou no "lora\_receiver.ino"
 
 Para realizar a conexão com o banco de dados.
 ```ỳml
