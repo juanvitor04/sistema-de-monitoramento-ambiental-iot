@@ -1,6 +1,8 @@
-# 🌡️ Estação de Monitoramento Ambiental com ESP32, LoRa e Grafana
+readme_content = """# 🌡️ Estação de Monitoramento Ambiental com ESP32, LoRa e Grafana
 
 Este projeto tem como objetivo criar uma **estação de monitoramento ambiental inteligente** utilizando o microcontrolador **ESP32**, sensores de qualidade do ar (**MQ-135**) e de temperatura/umidade (**DHT11**), comunicação via **LoRa** e integração com banco de dados **InfluxDB** e o painel de visualização **Grafana**.
+
+---
 
 ## 📦 Funcionalidades
 
@@ -21,6 +23,8 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 - 💤 Economia de energia:
   - O ESP32 entra em modo **Deep Sleep** entre cada leitura para otimizar o consumo energético
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 | Componente          | Função                                   |
@@ -33,34 +37,21 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 | **Grafana**         | Visualização e painéis de dados           |
 | **Docker Compose**  | Facilita o deploy dos containers          |
 
-## 🚀 Como usar
+---
 
-### Pré-requisitos
+## 🚀 Como Usar
 
--ESP32 DevKit (pelo menos 2 unidades) caso use LoRa, com somente wi-fi é necessario um ESP32 com Suporte a wi-fi
+### ✅ Pré-requisitos
+
+- ESP32 DevKit (pelo menos 2 unidades para uso com LoRa; apenas 1 se usar Wi-Fi)
 - Arduino IDE configurado com suporte ao ESP32
 - Docker instalado na máquina (para InfluxDB e Grafana)
 - Sensores conectados aos pinos indicados nos códigos
 
-### Processo de instalação
+---
 
 ## 🐋 Docker Compose – Instalação e Configuração
 
 ### 📦 Instalação do Docker e Docker Compose (Ubuntu)
-
-```bash
-sudo apt update
-sudo apt install -y docker.io docker-compose-plugin
-
-## 🔐 Variáveis de Ambiente – InfluxDB e Grafana
-
-### 📦 InfluxDB
-
-```env
-INFLUXDB_USER=admin
-INFLUXDB_PASSWORD=senha123
-INFLUXDB_ORG=my-org
-INFLUXDB_BUCKET=my-bucket
-INFLUXDB_TOKEN=meu-token-secreto
 
 
