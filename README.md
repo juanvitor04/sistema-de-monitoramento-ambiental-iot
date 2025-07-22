@@ -56,9 +56,9 @@ sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 ```
 
-As configurações abaixo foram feitas no arquivo "docker-composer.yml" então baixe o arquivo que está disponivel e o edite.
+As configurações abaixo foram feitas no arquivo "docker-compose.yml" então baixe o arquivo que está disponivel e o edite.
 
-As variáveis de ambiente podem ser mudadas no arquivo docker-composer.yml lembre-se que essas informações vão ser colocados no arquivo "detection\_wifi.ino" ou no "lora\_receiver.ino"
+As variáveis de ambiente podem ser mudadas no arquivo docker-compose.yml lembre-se que essas informações vão ser colocados no arquivo "detection_wifi.ino" ou no "lora_receiver.ino"
 
 Para realizar a conexão com o banco de dados.
 ```ỳml
@@ -74,6 +74,7 @@ INFLUXDB_BUCKET=my-bucket
 INFLUXDB_TOKEN=meu-token-secreto
 ```
 ## Grafana usuário e senha
+No arquivo docker-compose.yml edite as variveis de ambiente do grafana
 ```yml
 GF_SECURITY_ADMIN_USER=GRAFANA_USER
 GF_SECURITY_ADMIN_PASSWORD=GRAFANA_PASSWORD
@@ -83,13 +84,13 @@ GF_SECURITY_ADMIN_PASSWORD=GRAFANA_PASSWORD
 docker compose up -d
 ```
 
-🛠️ Configurações Necessárias para o Sistema Funcionar(Observação essas alterações deve ser feita  no arquivo nomeado "lora_receiver.ino"
+## 🛠️ Configuração do Sistema
+As configurações devem ser feitas no arquivo lora_receiver.ino (para comunicação via LoRa).
 
-se for usar comunicação LoRA se for wifi utilize o arquivo "detection\_wifi.ino").
+Caso opte por Wi-Fi, utilize o arquivo detection_wifi.ino.
 
-⚠️ Observação Importante sobre o Dispositivo Receptor (Gateway)
-
-O dispositivo receptor (este código) deve obrigatoriamente ter suporte a Wi-Fi, pois ele atua como um gateway LoRa-WiFi.
+⚠️ Importante:
+O dispositivo receptor (gateway) precisa ter suporte a Wi-Fi, pois ele funciona como uma ponte entre LoRa e Wi-Fi.
 
 Ele é responsável por:
 
@@ -103,9 +104,9 @@ Você deve alterar as variáveis de ambiente no seu código para refletirem os d
 
 🌐 0. Wi-Fi (Obrigatório para envio ao InfluxDB)
 
-#define WIFI\_SSID "SSD\_WIFI"
+#define WIFI_SSID "SSID_WIFI"
 
-#define WIFI\_PASSWORD "PASSWORD\_WIFI"
+#define WIFI_PASSWORD "PASSWORD_WIFI"
 
 🔁 Substitua pelos dados reais da sua rede Wi-Fi:
 
