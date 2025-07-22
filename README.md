@@ -160,7 +160,7 @@ Passos básicos para integrar:
   2. Clique em Add data source e escolha InfluxDB.
   3. Preencha as configurações
 
-    - URL: http://<IP\_do\_InfluxDB>:8086
+    - URL: http://<IP_do_InfluxDB>:8086
     - Auth: marque para usar autenticação e insira o Token do InfluxDB.
     - Organization: nome da organização configurada no InfluxDB.
     - Default Bucket: o bucket onde os dados estão sendo armazenados.
