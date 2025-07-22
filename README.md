@@ -63,19 +63,19 @@ As variáveis de ambiente podem ser mudadas no arquivo docker-composer.yml lembr
 Para realizar a conexão com o banco de dados.
 ```ỳml
 
-INFLUXDB\_USER=admin
+INFLUXDBUSER=admin
 
-INFLUXDB\_PASSWORD=senha123
+INFLUXDBPASSWORD=senha123
 
-INFLUXDB\_ORG=my-org
+INFLUXDBORG=my-org
 
-INFLUXDB\_BUCKET=my-bucket
+INFLUXDBBUCKET=my-bucket
 
-INFLUXDB\_TOKEN=meu-token-secreto
+INFLUXDBTOKEN=meu-token-secreto
 
-GRAFANA\_USER=admin
+GRAFANAUSER=admin
 
-GRAFANA\_PASSWORD=grafana123
+GRAFANAPASSWORD=grafana123
 ```
 
 ## Inicie os contairners
