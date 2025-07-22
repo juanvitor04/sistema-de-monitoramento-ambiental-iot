@@ -40,7 +40,6 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 ---
 
 ## 🚀 Como Usar
-
 ### ✅ Pré-requisitos
 
 - ESP32 DevKit (pelo menos 2 unidades para uso com LoRa; apenas 1 se usar Wi-Fi)
