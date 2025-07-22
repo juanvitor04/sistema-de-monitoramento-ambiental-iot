@@ -56,7 +56,7 @@ Este projeto tem como objetivo criar uma **estação de monitoramento ambiental 
 ```bash
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
-```+
+```
 
 As configurações abaixo foram feitas no arquivo "docker-composer.yml" então baixe o arquivo que está disponivel e o edite.
 
