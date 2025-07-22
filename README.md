@@ -83,7 +83,6 @@ GF_SECURITY_ADMIN_PASSWORD=GRAFANA_PASSWORD
 ```bash
 docker compose up -d
 ```
-
 ## 🛠️ Configuração do Sistema
 
 As configurações devem ser feitas no arquivo lora_receiver.ino (para comunicação via LoRa).
